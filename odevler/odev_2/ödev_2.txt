@@ -1,0 +1,207 @@
+Python Collections – 10 Uygulama Sorusu
+1. Listeye Eleman Ekleme ve Güncelleme
+
+Aşağıdaki kullanıcı listesini oluşturunuz:
+
+users = ["Ali", "Veli", "Ayşe", "Fatma", "Mehmet"]
+
+Programınız;
+
+Listenin elemanlarını ekrana yazdırmalı,
+Listenin uzunluğunu göstermeli,
+Listenin sonuna "Zeynep" eklemeli,
+Listenin 2. index'ine "Ahmet" eklemeli,
+"Fatma" isimli kullanıcıyı silmeli,
+İlk kullanıcıyı "Kemal" olarak güncellemeli,
+Son haliyle listeyi ekrana yazdırmalıdır.
+2. Liste ve For Döngüsü
+
+Aşağıdaki listeyi kullanınız:
+
+numbers = [12, 5, 8, 21, 4, 17, 30, 9, 6]
+
+Bir for döngüsü kullanarak;
+
+Listedeki tüm sayıları yazdırınız.
+Sadece çift sayıları yazdırınız.
+Sadece 10'dan büyük sayıları yazdırınız.
+Listedeki sayıların toplamını hesaplayınız.
+Listenin kaç elemandan oluştuğunu bulunuz.
+
+Sonuçları anlaşılır mesajlarla ekrana yazdırınız.
+
+3. range, break ve continue
+
+range() kullanarak 1 ile 20 arasındaki sayıları dolaşan bir program yazınız.
+
+Program;
+
+5'in katlarını ekrana yazdırmamalı (continue),
+17 sayısına ulaştığında döngüyü sonlandırmalı (break),
+Diğer sayıları ekrana yazdırmalıdır.
+
+Örneğin çıktı içerisinde 5, 10, 15 bulunmamalı ve 17 ekrana yazdırılmamalıdır.
+
+4. While ile Liste İşlemleri
+
+Aşağıdaki listeyi kullanınız:
+
+numbers = [10, 25, 7, 32, 18, 41, 6]
+
+while döngüsü kullanarak listedeki elemanları tek tek ekrana yazdırınız.
+
+Programınız ayrıca;
+
+Kaç tane eleman olduğunu,
+Kaç tane çift sayı bulunduğunu,
+Kaç tane tek sayı bulunduğunu
+
+hesaplayıp ekrana yazdırmalıdır.
+
+Bu soruda for döngüsü kullanmayınız.
+
+5. Liste İçerisindeki Dictionary Yapısı
+
+Aşağıdaki şehir listesini oluşturunuz:
+
+cities = [
+    {"name": "Istanbul", "population": 15000000, "area": 5461},
+    {"name": "Ankara", "population": 5500000, "area": 2512},
+    {"name": "Izmir", "population": 4300000, "area": 1234},
+    {"name": "Bursa", "population": 3000000, "area": 1050}
+]
+
+Bir for döngüsü kullanarak;
+
+Her şehrin adını,
+Nüfusunu,
+Yüzölçümünü
+
+ekrana yazdırınız.
+
+Daha sonra programı geliştirerek nüfusu 5.000.000'dan fazla olan şehirleri ayrıca listeleyiniz.
+
+6. Liste Sıralama ve Tersine Çevirme
+
+Aşağıdaki kullanıcı listesini kullanınız:
+
+users = ["Ahmet", "Mehmet", "Fatma", "Ayşe", "Zeynep", "Bengü"]
+
+Programınız;
+
+Listenin mevcut halini yazdırmalı,
+Listeyi alfabetik olarak sıralamalı,
+Sıralanmış listeyi yazdırmalı,
+Listeyi tersine çevirmeli,
+Son halini yazdırmalı,
+Listenin ilk ve son elemanını ayrıca göstermelidir.
+
+sort() ve reverse() metotlarını kullanınız.
+
+7. Tuple ve Set Kullanımı
+
+Aşağıdaki gün listesini oluşturunuz:
+
+days = (
+    "Pazartesi",
+    "Pazartesi",
+    "Salı",
+    "Çarşamba",
+    "Çarşamba",
+    "Perşembe",
+    "Cuma",
+    "Cumartesi",
+    "Pazar"
+)
+
+Programınız;
+
+Tuple'ın tamamını yazdırmalı,
+İlk günü göstermeli,
+Tuple'ın kaç elemandan oluştuğunu bulmalı,
+Tuple'ı set yapısına dönüştürmeli,
+Set içerisindeki benzersiz günleri yazdırmalıdır.
+
+Ayrıca tuple içerisindeki tekrar eden günlerin neden set içerisinde tek bir kez bulunduğunu gözlemleyiniz.
+
+8. Dictionary Üzerinde İşlemler
+
+Aşağıdaki dictionary yapısını oluşturunuz:
+
+user = {
+    "name": "Ahmet",
+    "age": 30,
+    "city": "Istanbul"
+}
+
+Programınız;
+
+Kullanıcının adını,
+Yaşını,
+Şehrini
+
+ekrana yazdırmalıdır.
+
+Daha sonra;
+
+"email" anahtarını ekleyiniz,
+Kullanıcının adını "Mehmet" olarak değiştiriniz,
+Yaşını 35 olarak güncelleyiniz,
+"address" anahtarını ekleyiniz.
+
+Son olarak dictionary'nin;
+
+keys() değerlerini,
+values() değerlerini,
+Eleman sayısını
+
+ekrana yazdırınız.
+
+9. Dictionary Listesi ile Kullanıcı Arama
+
+Aşağıdaki yapıyı kullanınız:
+
+users = [
+    {"name": "Ahmet", "age": 30, "city": "Istanbul"},
+    {"name": "Mehmet", "age": 25, "city": "Ankara"},
+    {"name": "Ayşe", "age": 20, "city": "Izmir"},
+    {"name": "Fatma", "age": 35, "city": "Bursa"}
+]
+
+Bir program yazınız.
+
+Program;
+
+Tüm kullanıcıları ad, yaş ve şehir bilgileriyle listelemeli,
+Yaşı 30 ve üzeri olan kullanıcıları göstermeli,
+"Ankara" şehrinde yaşayan kullanıcıları göstermeli,
+"Ayşe" isimli kullanıcıyı bulduğunda "Ayşe bulundu" mesajını yazdırmalıdır.
+
+Kullanıcı arama işleminde for ve break kullanınız.
+
+10. Kapsamlı Collections Uygulaması
+
+Bir şirketin çalışanlarını aşağıdaki yapıda tutan programı yazınız:
+
+employees = [
+    {"name": "Ahmet", "department": "Yazılım", "age": 30},
+    {"name": "Mehmet", "department": "Satış", "age": 25},
+    {"name": "Ayşe", "department": "Yazılım", "age": 28},
+    {"name": "Fatma", "department": "İK", "age": 35},
+    {"name": "Zeynep", "department": "Yazılım", "age": 24}
+]
+
+Programınız aşağıdaki işlemleri gerçekleştirmelidir:
+
+Tüm çalışanları ekrana yazdırınız.
+Sadece "Yazılım" departmanında çalışanları gösteriniz.
+Yaşı 30 ve üzeri olan çalışanları gösteriniz.
+Çalışanların yaşlarını ayrı bir list içerisinde toplayınız.
+Departman isimlerini ayrı bir set içerisinde tutunuz.
+En az bir çalışan "Yazılım" departmanında bulunduğunda "Yazılım departmanı mevcut" mesajını gösteriniz.
+"Fatma" isimli çalışan bulunduğunda aramayı break ile sonlandırınız.
+Çalışan sayısını len() kullanarak gösteriniz.
+Departman listesindeki benzersiz departmanları gösteriniz.
+Programın sonunda çalışanların bilgilerini düzenli ve okunabilir bir biçimde ekrana yazdırınız.
+
+Ek şart: Bu soruyu çözerken for, if, break, list, set ve dictionary yapılarını birlikte kullanınız.

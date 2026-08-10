@@ -83,7 +83,7 @@ for item in dic_arr:
     
 print(user.keys())
 for key in user.keys():
-    print(key, user[key])   
+    print(key, user[key])
     
 print("================================")      
 print(user.values())
