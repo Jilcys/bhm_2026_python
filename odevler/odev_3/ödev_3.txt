@@ -1,1 +1,325 @@
-ödev - 3
+PYTHON OOP – 5 UYGULAMALI SORU
+
+Amaç:
+Bu soru seti; öğrencinin ABC / abstractmethod, kalıtım (inheritance), method overriding, super(), polymorphism, constructor (__init__) ve class kullanımı konularını uygulama yaparak öğrenmesini hedeflemektedir.
+
+============================================================
+SORU 1 – BASİT KALITIM VE METHOD OVERRIDE
+============================================================
+
+Animal adında bir ana sınıf oluşturunuz.
+
+- Animal sınıfında speak() adında bir metot bulunmalıdır.
+- Dog sınıfı Animal sınıfından miras almalıdır.
+- Cat sınıfı da Animal sınıfından miras almalıdır.
+- Dog sınıfındaki speak() metodu "Köpek havlıyor" döndürmelidir.
+- Cat sınıfındaki speak() metodu "Kedi miyavlıyor" döndürmelidir.
+
+Daha sonra aşağıdaki işlemleri yapınız:
+
+    dog = Dog()
+    cat = Cat()
+
+    print(dog.speak())
+    print(cat.speak())
+
+Beklenen çıktı:
+
+    Köpek havlıyor
+    Kedi miyavlıyor
+
+Öğrenilmesi hedeflenen konular:
+- Class oluşturma
+- Inheritance
+- Method overriding
+- Nesne oluşturma
+
+
+============================================================
+SORU 2 – CONSTRUCTOR VE super()
+============================================================
+
+Person adında bir sınıf oluşturunuz.
+
+Bu sınıfın constructor'ı aşağıdaki bilgiyi almalıdır:
+
+    name
+
+Daha sonra Student adında Person sınıfından türeyen bir sınıf oluşturunuz.
+
+Student sınıfı:
+
+- name
+- studentNumber
+
+bilgilerini almalıdır.
+
+Student sınıfının constructor'ında Person sınıfındaki constructor'ı super() kullanarak çağırınız.
+
+Ayrıca Student sınıfında:
+
+    showInfo()
+
+adında bir metot oluşturunuz.
+
+Bu metot öğrencinin adını ve numarasını ekrana yazdırmalıdır.
+
+Örnek kullanım:
+
+    student = Student("Ali", 1001)
+    student.showInfo()
+
+Beklenen çıktı:
+
+    Öğrenci: Ali
+    Numara: 1001
+
+Öğrenilmesi hedeflenen konular:
+- __init__
+- Kalıtım
+- super()
+- Instance variable
+- Method oluşturma
+
+
+============================================================
+SORU 3 – ABSTRACT CLASS KULLANIMI
+============================================================
+
+Bir banka uygulaması için BankAccount adında abstract bir sınıf oluşturunuz.
+
+Bu sınıfta:
+
+    accountNumber()
+
+adında abstract bir metot bulunmalıdır.
+
+Ayrıca normal bir:
+
+    showAccount()
+
+metodu oluşturunuz.
+
+BankAccount sınıfından Customer adında bir sınıf türetiniz.
+
+Customer sınıfı constructor üzerinden hesap numarasını almalıdır.
+
+accountNumber() metodu müşterinin hesap numarasını döndürmelidir.
+
+Örnek kullanım:
+
+    customer = Customer(100)
+
+    print(customer.accountNumber())
+    customer.showAccount()
+
+Beklenen çıktı:
+
+    100
+    Hesap numaranız: 100
+
+Ek olarak öğrenciden şu işlemi denemesini isteyiniz:
+
+    account = BankAccount()
+
+Python'ın neden hata verdiğini inceleyiniz.
+
+Öğrenilmesi hedeflenen konular:
+- ABC
+- abstractmethod
+- Abstract class
+- Abstract metodu implement etme
+- Kalıtım
+- Constructor
+
+
+============================================================
+SORU 4 – POLYMORPHISM
+============================================================
+
+Aşağıdaki yapıya uygun bir program oluşturunuz.
+
+Employee adında bir ana sınıf oluşturunuz.
+
+Bu sınıfta:
+
+    work()
+
+adında bir metot bulunmalıdır.
+
+Daha sonra:
+
+- Developer
+- Manager
+
+adında iki sınıf oluşturunuz.
+
+Her iki sınıf da Employee sınıfından miras almalıdır.
+
+Ancak work() metodu her sınıfta farklı çalışmalıdır.
+
+Developer:
+
+    Yazılım geliştiriyor
+
+Manager:
+
+    Ekibi yönetiyor
+
+yazdırmalıdır.
+
+Daha sonra aşağıdaki gibi bir showWork() fonksiyonu oluşturunuz:
+
+    def showWork(employee):
+        employee.work()
+
+Bu fonksiyona hem Developer hem de Manager nesnesi gönderiniz.
+
+Örnek:
+
+    developer = Developer()
+    manager = Manager()
+
+    showWork(developer)
+    showWork(manager)
+
+Beklenen çıktı:
+
+    Yazılım geliştiriyor
+    Ekibi yönetiyor
+
+Öğrenilmesi hedeflenen konular:
+- Inheritance
+- Method overriding
+- Polymorphism
+- Nesneyi parametre olarak gönderme
+- Ortak davranış / farklı implementasyon
+
+
+============================================================
+SORU 5 – KÜÇÜK BİR BANKA UYGULAMASI
+============================================================
+
+Şimdi öğrendiğiniz konuları birleştirerek küçük bir banka uygulaması oluşturunuz.
+
+BankAccount adında ABSTRACT bir sınıf oluşturunuz.
+
+Bu sınıfta:
+
+    accountNumber()
+    deposit()
+    withdraw()
+
+metotları bulunmalıdır.
+
+Customer sınıfı BankAccount sınıfından miras almalıdır.
+
+Customer:
+
+- name
+- number
+- balance
+
+bilgilerini constructor üzerinden almalıdır.
+
+Aşağıdaki işlemleri gerçekleştirecek metotları yazınız:
+
+1. accountNumber()
+
+Hesap numarasını döndürmelidir.
+
+2. deposit(amount)
+
+Hesaba para yatırmalıdır.
+
+Örneğin:
+
+    customer.deposit(500)
+
+3. withdraw(amount)
+
+Hesaptan para çekmelidir.
+
+Bakiyede yeterli para yoksa:
+
+    Yetersiz bakiye!
+
+yazdırmalıdır.
+
+4. showInfo()
+
+Müşterinin bilgilerini ekrana yazdırmalıdır.
+
+Örneğin:
+
+    Müşteri: Ahmet
+    Hesap No: 100
+    Bakiye: 1500
+
+Programın sonunda aşağıdaki işlemleri yapınız:
+
+    customer = Customer("Ahmet", 100, 1000)
+
+    customer.showInfo()
+
+    customer.deposit(500)
+    customer.withdraw(200)
+
+    customer.showInfo()
+
+Beklenen çıktı yaklaşık olarak:
+
+    Müşteri: Ahmet
+    Hesap No: 100
+    Bakiye: 1000
+
+    500 TL yatırıldı.
+    200 TL çekildi.
+
+    Müşteri: Ahmet
+    Hesap No: 100
+    Bakiye: 1300
+
+
+============================================================
+SORULARIN İLERLEME MANTIĞI
+============================================================
+
+Soru 1:
+Inheritance + Override
+Zorluk: *
+
+Soru 2:
+Constructor + super()
+Zorluk: **
+
+Soru 3:
+Abstract Class
+Zorluk: **
+
+Soru 4:
+Polymorphism
+Zorluk: ***
+
+Soru 5:
+Tüm konuları birleştirme
+Zorluk: ***
+
+
+EĞİTMEN NOTU
+============================================================
+
+Özellikle 5. soruyu son soru olarak bırakmanız önerilir.
+
+Öğrenci ilk dört soruda konuları parça parça öğrenip 5. soruda bunları
+kendi başına birleştirecektir.
+
+Amaç sadece hazır kodu yazmak değil; öğrencinin aşağıdaki soruların
+cevabını kod üzerinde keşfetmesidir:
+
+- Bu sınıfı neden abstract yaptım?
+- Burada neden inheritance kullandım?
+- super() ne işime yarıyor?
+- Method overriding neden gerekli?
+- Polymorphism hangi problemi çözüyor?
+- Nesneleri neden ortak bir metot üzerinden çalıştırabiliyorum?
